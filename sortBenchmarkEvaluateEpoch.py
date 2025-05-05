@@ -7,7 +7,7 @@ import time
 df = pd.read_csv("customer_shopping_data.csv")
 customer_ids = np.array([int(cid[1:]) for cid in df['customer_id'].astype(str).unique()])
 
-# Generate random and uniform subsets
+# Generate random and uniform subsets, you can change to what you want to search
 random_data = np.array([random.choice(customer_ids) for _ in range(1000)])
 uniform_data = np.linspace(customer_ids.min(), customer_ids.max(), 1000, dtype=int)
 

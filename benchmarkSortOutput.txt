@@ -4,52 +4,46 @@
 
 Epoch 1:
 
-bubble_sort_random: 132.620 ms
-bubble_sort_uniform: 69.849 ms
-quick_sort_random: 1.692 ms
-quick_sort_uniform: 1.195 ms
+bubble_sort: 1356001.252 ms
+quick_sort: 281.764 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 2:
 
-bubble_sort_random: 136.880 ms
-bubble_sort_uniform: 66.526 ms
-quick_sort_random: 1.900 ms
-quick_sort_uniform: 1.184 ms
+
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 3:
 
-bubble_sort_random: 139.048 ms
-bubble_sort_uniform: 62.635 ms
-quick_sort_random: 1.991 ms
-quick_sort_uniform: 1.224 ms
+
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 4:
 
-bubble_sort_random: 136.704 ms
-bubble_sort_uniform: 73.258 ms
-quick_sort_random: 2.012 ms
-quick_sort_uniform: 1.155 ms
+
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 5:
 
-bubble_sort_random: 126.855 ms
-bubble_sort_uniform: 64.861 ms
-quick_sort_random: 1.743 ms
-quick_sort_uniform: 1.159 ms
+
 
 --------------------------------------------------------------------------------------------------------------
 
-Evaluate 100 epochs:
+Evaluate 5 epochs:
 
+bubble_sort:
+  Best Time   : 
+  Average Time: 
+  Worst Time  : 
 
+quick_sort:
+  Best Time   : 
+  Average Time: 
+  Worst Time  : 
 
 ==============================================================================================================
 10.000 data
@@ -57,52 +51,50 @@ Evaluate 100 epochs:
 
 Epoch 1:
 
-bubble_sort_random: 136.518 ms
-bubble_sort_uniform: 66.913 ms
-quick_sort_random: 1.748 ms
-quick_sort_uniform: 1.110 ms
+bubble_sort: 13854.542 ms
+quick_sort: 22.225 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 2:
 
-bubble_sort_random: 142.397 ms
-bubble_sort_uniform: 68.367 ms
-quick_sort_random: 1.668 ms
-quick_sort_uniform: 1.142 ms
+bubble_sort: 13665.137 ms
+quick_sort: 23.769 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 3:
 
-bubble_sort_random: 140.099 ms
-bubble_sort_uniform: 63.081 ms
-quick_sort_random: 1.931 ms
-quick_sort_uniform: 1.128 ms
+bubble_sort: 13954.525 ms
+quick_sort: 23.748 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 4:
 
-bubble_sort_random: 139.273 ms
-bubble_sort_uniform: 67.019 ms
-quick_sort_random: 1.814 ms
-quick_sort_uniform: 1.152 ms
+bubble_sort: 13976.641 ms
+quick_sort: 22.830 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 5:
 
-bubble_sort_random: 129.802 ms
-bubble_sort_uniform: 62.956 ms
-quick_sort_random: 1.773 ms
-quick_sort_uniform: 1.123 ms
+bubble_sort: 13557.341 ms
+quick_sort: 22.755 ms
 
 --------------------------------------------------------------------------------------------------------------
 
-Evaluate 100 epochs:
+Evaluate 5 epochs:
 
+bubble_sort:
+  Best Time   : 13,557.341 ms
+  Average Time: 13,801.237 ms
+  Worst Time  : 13,976.641 ms
 
+quick_sort:
+  Best Time   : 22.225 ms
+  Average Time: 23.065 ms
+  Worst Time  : 23.769 ms
 
 ==============================================================================================================
 1.000 data
@@ -110,52 +102,50 @@ Evaluate 100 epochs:
 
 Epoch 1:
 
-bubble_sort_random: 140.808 ms
-bubble_sort_uniform: 66.929 ms
-quick_sort_random: 1.714 ms
-quick_sort_uniform: 1.223 ms
+bubble_sort: 147.106 ms
+quick_sort: 1.845 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 2:
 
-bubble_sort_random: 142.564 ms
-bubble_sort_uniform: 62.391 ms
-quick_sort_random: 1.620 ms
-quick_sort_uniform: 1.179 ms
+bubble_sort: 151.709 ms
+quick_sort: 2.035 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 3:
 
-bubble_sort_random: 136.114 ms
-bubble_sort_uniform: 66.562 ms
-quick_sort_random: 1.678 ms
-quick_sort_uniform: 1.260 ms
+bubble_sort: 145.864 ms
+quick_sort: 1.741 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 4:
 
-bubble_sort_random: 135.448 ms
-bubble_sort_uniform: 62.893 ms
-quick_sort_random: 1.624 ms
-quick_sort_uniform: 1.171 ms
+bubble_sort: 160.178 ms
+quick_sort: 1.856 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 5:
 
-bubble_sort_random: 142.428 ms
-bubble_sort_uniform: 69.027 ms
-quick_sort_random: 1.656 ms
-quick_sort_uniform: 1.233 ms
+bubble_sort: 151.415 ms
+quick_sort: 2.063 ms
 
 --------------------------------------------------------------------------------------------------------------
 
-Evaluate 100 epochs:
+Evaluate 5 epochs:
 
+bubble_sort:
+  Best Time   : 145.864 ms
+  Average Time: 151.254 ms
+  Worst Time  : 160.178 ms
 
+quick_sort:
+  Best Time   : 1.741 ms
+  Average Time: 1.908 ms
+  Worst Time  : 2.063 ms
 
 ==============================================================================================================
 100 data
@@ -163,48 +153,47 @@ Evaluate 100 epochs:
 
 Epoch 1:
 
-bubble_sort_random: 142.272 ms
-bubble_sort_uniform: 64.617 ms
-quick_sort_random: 0.890 ms
-quick_sort_uniform: 1.189 ms
+bubble_sort: 1.338 ms
+quick_sort: 0.143 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 2:
 
-bubble_sort_random: 143.280 ms
-bubble_sort_uniform: 72.626 ms
-quick_sort_random: 1.102 ms
-quick_sort_uniform: 1.156 ms
+bubble_sort: 1.395 ms
+quick_sort: 0.143 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 3:
 
-bubble_sort_random: 138.669 ms
-bubble_sort_uniform: 64.853 ms
-quick_sort_random: 1.027 ms
-quick_sort_uniform: 1.143 ms
+bubble_sort: 1.363 ms
+quick_sort: 0.185 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 4:
 
-bubble_sort_random: 146.895 ms
-bubble_sort_uniform: 68.775 ms
-quick_sort_random: 1.197 ms
-quick_sort_uniform: 1.762 ms
+bubble_sort: 1.434 ms
+quick_sort: 0.140 ms
 
 --------------------------------------------------------------------------------------------------------------
 
 Epoch 5:
 
-bubble_sort_random: 143.389 ms
-bubble_sort_uniform: 68.008 ms
-quick_sort_random: 1.305 ms
-quick_sort_uniform: 1.773 ms
+bubble_sort: 1.764 ms
+quick_sort: 0.147 ms
 
 --------------------------------------------------------------------------------------------------------------
 
-Evaluate 100 epochs:
+Evaluate 5 epochs:
 
+bubble_sort:
+  Best Time   : 1.338 ms
+  Average Time: 1.459 ms
+  Worst Time  : 1.764 ms
+
+quick_sort:
+  Best Time   : 0.140 ms
+  Average Time: 0.152 ms
+  Worst Time  : 0.185 ms
