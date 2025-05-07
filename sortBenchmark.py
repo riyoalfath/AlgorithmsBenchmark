@@ -4,9 +4,8 @@ import random
 import time
 
 # Load data
-df = pd.read_csv("customer_shopping_data.csv")
+df = pd.read_csv("customer_shopping_data_1000.csv")
 
-# Generate random and uniform subsets, you can change to what you want to search
 customer_ids = np.array([int(cid[1:]) for cid in df['customer_id'].astype(str)])
 
 # Bubble Sort

@@ -3,12 +3,11 @@ import numpy as np
 import random
 import time
 
-# Load the data, take the data you want to test
-df = pd.read_csv("customer_shopping_data_100.csv")
+# Load the data
+df = pd.read_csv("customer_shopping_data_1000.csv")
 
-# Generate random and uniform subsets, you can change to what you want to search
-sorted_ids = sorted(df['customer_id'].astype(str).unique())
-sorted_ids_numeric = np.array([int(i[1:]) for i in sorted_ids])
+ids_numeric = np.array([int(i[1:]) for i in df['customer_id'].astype(str).unique()])
+sorted_ids_numeric = np.sort(ids_numeric, kind='quicksort')
 
 # Binary Search
 def binary_search(arr, target):
@@ -50,8 +49,9 @@ def benchmark_search(search_func, arr, targets):
 
 
 # Generate target values
-random_targets = [random.choice(sorted_ids_numeric) for _ in range(1000)]
-uniform_targets = list(np.linspace(sorted_ids_numeric[0], sorted_ids_numeric[-1], 1000, dtype=int))
+target_count = len(sorted_ids_numeric)
+random_targets = [random.choice(sorted_ids_numeric) for _ in range(target_count)]
+uniform_targets = list(np.linspace(sorted_ids_numeric[0], sorted_ids_numeric[-1], target_count, dtype=int))
 
 # Run benchmarks
 results = {
