@@ -6,7 +6,7 @@ import time
 # Load the pre-sorted data
 df = pd.read_csv("sorted_quick.csv")
 
-# Extract numeric customer IDs (no need to sort)
+# Extract numeric customer IDs
 sorted_ids_numeric = np.array([int(i[1:]) for i in df['customer_id'].astype(str)])
 
 # Binary Search
@@ -40,12 +40,15 @@ def interpolation_search(arr, target):
     return -1
 
 # Benchmark function
-def benchmark_search(search_func, arr, targets):
-    start = time.perf_counter()
-    for target in targets:
-        search_func(arr, target)
-    end = time.perf_counter()
-    return (end - start) * 1000  # milliseconds
+def benchmark_search_epochs(search_func, arr, targets, epochs=10):
+    times = []
+    for _ in range(epochs):
+        start = time.perf_counter()
+        for target in targets:
+            search_func(arr, target)
+        end = time.perf_counter()
+        times.append((end - start) * 1000)  # ms
+    return times
 
 # Generate target values
 target_count = len(sorted_ids_numeric)
@@ -54,12 +57,18 @@ uniform_targets = list(np.linspace(sorted_ids_numeric[0], sorted_ids_numeric[-1]
 
 # Run benchmarks
 results = {
-    "binary_random": benchmark_search(binary_search, sorted_ids_numeric, random_targets),
-    "binary_uniform": benchmark_search(binary_search, sorted_ids_numeric, uniform_targets),
-    "interpolation_random": benchmark_search(interpolation_search, sorted_ids_numeric, random_targets),
-    "interpolation_uniform": benchmark_search(interpolation_search, sorted_ids_numeric, uniform_targets)
+    "binary_random": benchmark_search_epochs(binary_search, sorted_ids_numeric, random_targets),
+    "binary_uniform": benchmark_search_epochs(binary_search, sorted_ids_numeric, uniform_targets),
+    "interpolation_random": benchmark_search_epochs(interpolation_search, sorted_ids_numeric, random_targets),
+    "interpolation_uniform": benchmark_search_epochs(interpolation_search, sorted_ids_numeric, uniform_targets)
 }
 
-# Print results
-for key, value in results.items():
-    print(f"{key}: {value:.3f} ms")
+# Print best, average, and worst case times
+for key, times in results.items():
+    best = min(times)
+    avg = sum(times) / len(times)
+    worst = max(times)
+    print(f"{key}:")
+    print(f"  Best  : {best:.3f} ms")
+    print(f"  Avg   : {avg:.3f} ms")
+    print(f"  Worst : {worst:.3f} ms")

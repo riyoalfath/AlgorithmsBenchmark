@@ -281,3 +281,87 @@ interpolation_uniform:
   Best Time   : 4.343 ms
   Worst Time  : 8.671 ms
   Average Time: 4.837 ms
+
+==============================================================================================================
+100 data
+==============================================================================================================
+
+binary_random:
+  Best  : 0.142 ms
+  Avg   : 0.157 ms
+  Worst : 0.247 ms
+binary_uniform:
+  Best  : 0.173 ms
+  Avg   : 0.179 ms
+  Worst : 0.298 ms
+interpolation_random:
+  Best  : 0.876 ms
+  Avg   : 1.001 ms
+  Worst : 2.211 ms
+interpolation_uniform:
+  Best  : 0.600 ms
+  Avg   : 0.663 ms
+  Worst : 1.650 ms
+
+==============================================================================================================
+1000 data
+==============================================================================================================
+
+binary_random:
+  Best  : 2.375 ms
+  Avg   : 2.614 ms
+  Worst : 3.968 ms
+binary_uniform:
+  Best  : 2.780 ms
+  Avg   : 2.936 ms
+  Worst : 3.877 ms
+interpolation_random:
+  Best  : 19.197 ms
+  Avg   : 20.365 ms
+  Worst : 27.869 ms
+interpolation_uniform:
+  Best  : 11.661 ms
+  Avg   : 12.246 ms
+  Worst : 17.798 ms
+
+==============================================================================================================
+10000 data
+==============================================================================================================
+
+binary_random:
+  Best  : 34.068 ms
+  Avg   : 38.544 ms
+  Worst : 82.266 ms
+binary_uniform:
+  Best  : 37.293 ms
+  Avg   : 42.164 ms
+  Worst : 54.763 ms
+interpolation_random:
+  Best  : 298.989 ms
+  Avg   : 314.502 ms
+  Worst : 424.953 ms
+interpolation_uniform:
+  Best  : 160.134 ms
+  Avg   : 164.758 ms
+  Worst : 193.286 ms
+
+==============================================================================================================
+99457 data
+==============================================================================================================
+
+binary_random:
+  Best  : 442.141 ms
+  Avg   : 484.870 ms
+  Worst : 541.769 ms
+binary_uniform:
+  Best  : 462.834 ms
+  Avg   : 469.673 ms
+  Worst : 490.796 ms
+interpolation_random:
+  Best  : 4005.759 ms
+  Avg   : 4021.237 ms
+  Worst : 4055.153 ms
+interpolation_uniform:
+  Best  : 1987.085 ms
+  Avg   : 2007.897 ms
+  Worst : 2063.211 ms

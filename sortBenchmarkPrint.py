@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 # Load data
-df = pd.read_csv("customer_shopping_data_1000.csv")
+df = pd.read_csv("customer_shopping_data.csv")
 
 # Extract numeric parts from customer IDs
 customer_ids = np.array([int(cid[1:]) for cid in df['customer_id'].astype(str)])
